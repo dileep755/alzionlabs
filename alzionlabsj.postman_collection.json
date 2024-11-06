@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "e05950cd-4b90-4413-99df-520625172001",
+		"name": "alzionlabsj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9097/api/files/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/dileeps/Downloads/Encryption_Decryption_Info.docx"
+						},
+						{
+							"key": "passcode",
+							"value": "test",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9097/api/files/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9097",
+					"path": [
+						"api",
+						"files",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9097/api/files/download/d6f6b8d5-9cd5-44a8-9cf5-1af035b0f641?passcode=test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9097/api/files/download/d6f6b8d5-9cd5-44a8-9cf5-1af035b0f641?passcode=test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9097",
+					"path": [
+						"api",
+						"files",
+						"download",
+						"d6f6b8d5-9cd5-44a8-9cf5-1af035b0f641"
+					],
+					"query": [
+						{
+							"key": "passcode",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
