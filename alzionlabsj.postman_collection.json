@@ -26,12 +26,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://localhost:9097/api/files/upload",
-					"protocol": "http",
+					"raw": "https://alzionlabs-001.onrender.com/api/files/upload",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"alzionlabs-001",
+						"onrender",
+						"com"
 					],
-					"port": "9097",
 					"path": [
 						"api",
 						"files",
@@ -47,17 +48,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9097/api/files/download/d6f6b8d5-9cd5-44a8-9cf5-1af035b0f641?passcode=test",
-					"protocol": "http",
+					"raw": "https://alzionlabs-001.onrender.com/api/files/download/77d11910-d672-4444-a01b-e9f34794e3d5?passcode=test",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"alzionlabs-001",
+						"onrender",
+						"com"
 					],
-					"port": "9097",
 					"path": [
 						"api",
 						"files",
 						"download",
-						"d6f6b8d5-9cd5-44a8-9cf5-1af035b0f641"
+						"77d11910-d672-4444-a01b-e9f34794e3d5"
 					],
 					"query": [
 						{
