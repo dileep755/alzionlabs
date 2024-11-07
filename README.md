@@ -6,7 +6,7 @@ The base URL for all requests is:
 
 bash
 
-http://localhost:9097/api
+https://alzionlabs-001.onrender.com/api
 Endpoints
 1. File Upload
 POST /files/upload
@@ -15,7 +15,7 @@ This endpoint allows clients to upload a file along with a passcode for encrypti
 
 Request
 Method: POST
-URL: http://localhost:9097/api/files/upload
+URL: https://alzionlabs-001.onrender.com/api/files/upload
 Headers
 None required.
 Body (Form Data)
@@ -61,7 +61,7 @@ This endpoint allows clients to download a previously uploaded file using its un
 
 Request
 Method: GET
-URL: http://localhost:9097/api/files/download/{fileId}?passcode={passcode}
+URL: https://alzionlabs-001.onrender.com/api/files/download/{fileId}?passcode={passcode}
 Replace {fileId} with the unique identifier of the file (UUID) and {passcode} with the passcode used for encryption/decryption or authentication.
 
 Query Parameters
@@ -70,7 +70,7 @@ passcode	String	The passcode for decrypting or authenticating the file.
 Example Request URL
 
 
-http://localhost:9097/api/files/download/d6f6b8d5-9cd5-44a8-9cf5-1af035b0f641?passcode=test
+https://alzionlabs-001.onrender.com/api/files/download/d6f6b8d5-9cd5-44a8-9cf5-1af035b0f641?passcode=test
 Response
 Success (HTTP 200 OK):
 The server returns the requested file in the response body.
